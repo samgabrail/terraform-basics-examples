@@ -1,0 +1,21 @@
+# Copy this file to terraform.tfvars and fill in your values
+
+# Required
+project_id = "your-gcp-project-id"
+
+# Optional - uncomment to override defaults
+# region      = "us-central1"
+# zone        = "us-central1-a"
+# name_prefix = "demo"
+
+# Network configuration
+# subnet_cidr = "10.0.1.0/24"
+
+# Instance configuration
+# machine_type   = "e2-medium"
+# boot_image     = "debian-cloud/debian-12"
+# boot_disk_size = 20
+# boot_disk_type = "pd-balanced"
+
+# Security - restrict SSH access to your IP
+# ssh_source_ranges = ["YOUR_IP/32"]

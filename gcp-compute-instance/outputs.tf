@@ -64,3 +64,8 @@ output "cpu_platform" {
   description = "The CPU platform of the instance"
   value       = google_compute_instance.main.cpu_platform
 }
+
+output "auto_delete" {
+  description = "The auto delete setting of the boot disk"
+  value       = google_compute_instance.main.boot_disk[0].auto_delete
+}

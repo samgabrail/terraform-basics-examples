@@ -58,3 +58,9 @@ output "ssh_command" {
   description = "SSH command to connect to the instance"
   value       = "gcloud compute ssh ${google_compute_instance.main.name} --zone=${var.zone} --project=${var.project_id}"
 }
+
+
+output "cpu_platform" {
+  description = "The CPU platform of the instance"
+  value       = google_compute_instance.main.cpu_platform
+}
